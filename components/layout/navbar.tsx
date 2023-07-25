@@ -23,7 +23,7 @@ const Navbar = () => {
               height="550"
               className="mr-2 rounded-sm"
               priority={false}
-            ></Image>
+            />
 
           </Link>
         </div>
