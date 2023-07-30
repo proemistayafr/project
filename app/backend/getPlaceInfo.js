@@ -2,20 +2,14 @@ import axios from 'axios';
 
 const BASE_URL = 'https://zerttesh.onrender.com'; 
 
-export interface PlaceInfo {
-  place_name: string;
-  interesting_facts: string;
-}
-
-const getPlaceInfo = async (latitude: number, longitude: number): Promise<PlaceInfo | null> => {
+const getPlaceInfo = async (latitude, longitude) => {
   try {
     const response = await axios.get(`${BASE_URL}/get_place_info/${latitude}/${longitude}`);
-    return response.data as PlaceInfo;
+    return response.data;
   } catch (error) {
     console.error('Error fetching place info:', error);
     return null;
   }
 };
-
 
 export default getPlaceInfo;
