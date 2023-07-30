@@ -35,11 +35,7 @@ const Home = (props) => {
           </div>
         </div>
         </a>
-        {/* <img
-          src='/2.png'
-          alt="Screenshotfrom202307281119001112"
-          className={styles['screenshotfrom202307281119001']}
-        /> */}
+        {/* fnsjkd */}
         <span className={styles['text09']}>
           <span>experience a new way of researching</span>
         </span>
