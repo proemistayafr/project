@@ -75,7 +75,7 @@ export default function Mobile(props) {
   );
 }
 
-AndroidLarge1.defaultProps = {
+Mobile.defaultProps = {
   className: '',
   style: {},
 };
