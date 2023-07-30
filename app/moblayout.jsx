@@ -8,6 +8,7 @@ const mobLayout = ({ children }) => {
   return (
     <div className={isMobile ? styles.mobileContainer : styles.desktopContainer}>
       {children}
+      <Movile/>
     </div>
   );
 };

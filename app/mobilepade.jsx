@@ -1,6 +1,6 @@
 import styles from '@/app/mobilepage.module.css' ;
 
-export default function AndroidLarge1(props) {
+export default function Mobile(props) {
   return (
     <div className={`${props.className} ${styles['android-large-1-android-large-1x']}`} style={props.style}>
       <div className={styles['android-large-1-box_48114810box_483485x']}>
