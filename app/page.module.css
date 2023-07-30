@@ -489,6 +489,7 @@
   .desktop1 {
     height: 3300px; 
     margin-left: -60px;
+    margin-top: -50px;
   }
   .screenshotfrom202307281102261 {
     top: 0;
@@ -504,6 +505,7 @@
     font-family:Permanent Marker; 
     width: 311px;
     height: 409px;
+    margin-top: -40px;
   }
 
 .container {
@@ -532,7 +534,7 @@ height:16px;
 margin-top:-5px;
 color:rgba(255,255,255,1);
 font-weight:400;
-font-size:16px;
+font-size:14px;
 
 }
 .text4 {
@@ -545,13 +547,13 @@ font-size:16px;
 .text5 {
   color: rgba(255, 255, 255, 1);
   display:inline;
-  font-size:32px;
+  font-size:28px;
   
 }
 .text6 {
   color:#52ff00;
   display:inline;
-  font-size:32px;
+  font-size:28px;
 }
 .frame3 {
   box-sizing:border-box;
@@ -562,6 +564,7 @@ font-size:16px;
   gap:0;
   justify-content: center;
   margin-left: 10px;
+  margin-top: -70px;
   justify-content:space-between;
   padding-bottom:40px;
   padding-left:45px;

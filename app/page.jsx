@@ -7,11 +7,6 @@ const Home = (props) => {
   return (
     <div className={styles['container']}>
       <div className={styles['desktop1']}>
-        {/* <img
-          src='/1.png'
-          alt="Screenshotfrom20230728110226113"
-          className={styles['screenshotfrom202307281102261']}
-        /> */}
         <span className={styles['text1']}>
           <Balancer>
             BE YOUR OWN GUIDE! VISIT BEAUTIFUL PLACES IN KAZAKHSTAN AND DISCOVER
