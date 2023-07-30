@@ -1,22 +1,22 @@
 import React from 'react';
 import styles from './page.module.css'
 import Link from 'next/link';
-
+import Balancer  from "react-wrap-balancer";
 
 const Home = (props) => {
   return (
     <div className={styles['container']}>
       <div className={styles['desktop1']}>
-        <img
+        {/* <img
           src='/1.png'
           alt="Screenshotfrom20230728110226113"
           className={styles['screenshotfrom202307281102261']}
-        />
+        /> */}
         <span className={styles['text1']}>
-          <span>
+          <Balancer>
             BE YOUR OWN GUIDE! VISIT BEAUTIFUL PLACES IN KAZAKHSTAN AND DISCOVER
             ITS HISTORY IN REAL-TIME
-          </span>
+          </Balancer>
         </span>
         <div className={styles['group2']}>
           <span className={styles['text2']}>
@@ -40,11 +40,11 @@ const Home = (props) => {
           </div>
         </div>
         </a>
-        <img
+        {/* <img
           src='/2.png'
           alt="Screenshotfrom202307281119001112"
           className={styles['screenshotfrom202307281119001']}
-        />
+        /> */}
         <span className={styles['text09']}>
           <span>experience a new way of researching</span>
         </span>
@@ -97,8 +97,10 @@ const Home = (props) => {
         <img src='/gray.png' alt="back1124" className={styles['back1']} />
         <span className={styles['text24']}>
           <span>
+            <Balancer>
             “The world is a book, and those who do not travel read only a
             page.”—Saint Augustine
+            </Balancer>
           </span>
         </span>
         <img
