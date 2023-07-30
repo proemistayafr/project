@@ -784,4 +784,17 @@
     flex-shrink: 0;
     background-color: rgba(0, 0, 0, 1);
   }
+  .screenshot-from-2023-07-28-11- {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .be-your-own {
+    top: 50px;
+    left: 20px;
+    font-size: 32px;
+    width: 90%;
+    height: auto;
+  }
 }
