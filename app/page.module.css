@@ -488,6 +488,7 @@
 
   .desktop1 {
     height: 3300px; 
+    margin-left: -60px;
   }
   .screenshotfrom202307281102261 {
     top: 0;
@@ -559,7 +560,8 @@ font-size:16px;
   width:300px;
   border-radius:78px;
   gap:0;
-  align-items:center;
+  justify-content: center;
+  margin-left: 10px;
   justify-content:space-between;
   padding-bottom:40px;
   padding-left:45px;
@@ -573,6 +575,7 @@ font-size:16px;
   background-size:cover;
   background-position:center;
   box-sizing:border-box;
+  justify-content: center;
   height:26px;
   width:31px;margin-bottom: 30px;
 }
