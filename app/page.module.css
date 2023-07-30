@@ -479,6 +479,7 @@
     height: 3300px;
     margin-left: -75px;
     margin-top: -50px;
+    background-color: black;
   }
   
   .text1 {
@@ -795,6 +796,10 @@
   flex-direction:column;
   display:flex;
   box-sizing:border-box;
+  }
+
+  .container{
+    background-color: black;
   }
   
 
