@@ -153,92 +153,97 @@
 // export default Home;
 
 
-import React from 'react'
+import React from 'react';
 import Link from 'next/link';
 
 const Home = () => {
   return (
-    <div className='w-768 md:w-1024px lg:w-1536px'>
-      <div>
-        <button>
+    <div className='w-full md:w-2/3 lg:w-3/4 mx-auto px-4'>
+      <div className='my-8'>
+        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
           <p>ZERTTESH</p>
           <p>VISIT & EXPLORE</p>
         </button>
-        <h1>
-        BE YOUR OWN GUIDE! VISIT BEAUTIFUL PLACES IN KAZAKHSTAN AND DISCOVER
-        ITS HISTORY IN REAL-TIME
+        <h1 className='text-2xl md:text-4xl lg:text-5xl mt-4'>
+          BE YOUR OWN GUIDE! VISIT BEAUTIFUL PLACES IN KAZAKHSTAN AND DISCOVER
+          ITS HISTORY IN REAL-TIME
         </h1>
 
         <a
-           href="https://twitter.com/Tubussines69/status/1682683077695270913?s=20"
-           target="_blank">
-          <div>
-              <span>Introducing Zerttesh</span>          
-              <img src='/twitter.png' alt="twitter11111" />
-           </div>
+          href='https://twitter.com/Tubussines69/status/1682683077695270913?s=20'
+          target='_blank'
+          className='block mt-4'
+        >
+          <div className='bg-blue-500 text-white p-4 flex items-center justify-between'>
+            <span className='text-xl md:text-2xl'>Introducing Zerttesh</span>
+            <img
+              src='/twitter.png'
+              alt='twitter11111'
+              className='h-8 md:h-10'
+            />
+          </div>
         </a>
 
-       <h1>
-        Experience A New way of Researching
-       </h1>
-       <p>
-         Our AI-powered web app brings you information and captivating facts
-         about Kazakhstan sights you are visiting. It’s time for a journey of
-         discovery, right at your fingertips!
-       </p>
+        <h1 className='text-2xl md:text-4xl lg:text-5xl mt-8'>
+          Experience A New way of Researching
+        </h1>
+        <p className='text-base md:text-lg'>
+          Our AI-powered web app brings you information and captivating facts
+          about Kazakhstan sights you are visiting. It’s time for a journey of
+          discovery, right at your fingertips!
+        </p>
 
-
-      <div>
-       <img src='/mausoleum.jpg' alt="mausoleum1115"/>
-       <p>
+        <div className='my-8'>
+          <img
+            src='/mausoleum.jpg'
+            alt='mausoleum1115'
+            className='w-full h-auto'
+          />
+          <p className='text-base md:text-lg'>
             The construction of the mausoleum began in 1389, several centuries
             after Akhmet Yassawi&apos;s death, during the reign of Timur
             Tamerlane, the Central Asian conqueror. The mausoleum complex
             includes various structures, with the main highlight being the
-            impressive domed mausoleum, which houses the tomb of Akhmet
-            Yassawi.
-       </p>
+            impressive domed mausoleum, which houses the tomb of Akhmet Yassawi.
+          </p>
+        </div>
 
+        <div className='my-8'>
+          <img
+            src='/aishabibi.jpg'
+            alt='aishabibi1116'
+            className='w-full h-auto'
+          />
+          <p className='text-base md:text-lg'>
+            A historical mausoleum located in the southern region of Kazakhstan.
+            It is an architectural gem and a significant cultural monument in
+            Central Asia.
+          </p>
+          <br />
+          <p className='text-base md:text-lg'>
+            The mausoleum is believed to have been built in the 12th century,
+            during the period of the Karakhanid dynasty. It is named after Aisha
+            Bibi, who ...................
+          </p>
+        </div>
+
+        <h1 className='text-2xl md:text-4xl lg:text-5xl mt-8'>
+          “The world is a book, and those who do not travel read only a
+          page.”—Saint Augustine
+        </h1>
+
+        <div className='my-8'>
+          <h1 className='text-2xl md:text-4xl lg:text-5xl'>Visit, See, Explore</h1>
+          <h3 className='text-xl md:text-2xl'>Explore the Kazakhstan Beauty with Zerttesh</h3>
+          <Link href='/feature'>
+            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4'>
+              <p>Get Location</p>
+            </button>
+          </Link>
+        </div>
       </div>
-      
-      <div>
-       <img src='/aishabibi.jpg' alt="aishabibi1116"/>
-       <p>
-            A historical mausoleum located in the southern region of
-            Kazakhstan. It is an architectural gem and a significant
-            cultural monument in Central Asia.
-        </p>
-               <br></br>
-        <p>
-            The mausoleum is believed to have been built in the 12th
-            century, during the period of the Karakhanid dynasty. It is
-            named after Aisha Bibi, who ...................
-        </p>
-      </div>
-
-      <h1>
-            “The world is a book, and those who do not travel read only a
-             page.”—Saint Augustine
-      </h1>
-
-
-
-      <div>
-        <h1>Visit, See, Explore</h1>
-        <h3>Explore the Kazakhstan Beauty with Zerttesh</h3>
-      <Link href='/feature'>
-         <button>
-             <p>Get Location</p>         
-         </button>
-      </Link>
-      </div>
-
-
-
-
-      </div>   
     </div>
-  )
-}
+  );
+};
 
 export default Home;
