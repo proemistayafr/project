@@ -4,14 +4,16 @@ import './globals.css'
 
 const Home = () => {
   return (
-    <div className='w-full md:w-2/3 lg:w-3/4 mx-auto px-4'
+    <div className='w-full md:w-2/3 lg:w-3/4 mx-auto px-0 text-white'
          style={{ fontFamily: 'var(--font-raleway)' }}>
-      <div className='my-8'>
-        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+      <div className='my-8 ml-[-8]'>
+        <div className='hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-[20px]'
                 style={{ fontFamily: 'var(--font-permanent-marker)' }}>
-          <p>ZERTTESH</p>
-          <p>VISIT & EXPLORE</p>
-        </button>
+          <p>ZERTTE<span className='text-[#38B000]'>SH</span></p>
+          <p className='mt-[-11px] h-[13px] w-132 text-base font-[400]'>VISIT & EXPLORE</p>
+        </div>
+
+
         <h1 className='text-2xl md:text-4xl lg:text-5xl mt-4 absolute top-[98px] text-left font-[400] text-[#38B000]'
                        style={{ fontFamily: 'var(--font-permanent-marker)' }}>
           BE YOUR OWN GUIDE! VISIT BEAUTIFUL PLACES IN KAZAKHSTAN
@@ -20,19 +22,19 @@ const Home = () => {
         </h1>
 
         <a
-          href='https://twitter.com/Tubussines69/status/1682683077695270913?s=20'
-          target='_blank'
-          className='block mt-4'
-        >
-          <div className='bg-blue-500 text-white p-4 flex items-center justify-between'>
-            <span className='text-xl md:text-2xl'>Introducing Zerttesh</span>
-            <img
-              src='/twitter.png'
-              alt='twitter11111'
-              className='h-8 md:h-10'
-            />
-          </div>
-        </a>
+  href='https://twitter.com/Tubussines69/status/1682683077695270913?s=20'
+  target='_blank'
+  className='block mt-4'
+>
+  <div className='p-4 items-center justify-between flex-col mt-80 font-raleway flex h-[60px] w-[315px] sm:w-[250px] gap-[0] rounded-[78px] bg-[#84D1FD] px-[45px] py-[17px] font-[500] text-[#1DA1F3] text-center sm:text-left'>
+    <span className='text-xl md:text-2xl'>Introducing Zerttesh</span>
+    <img
+      src='/twitter.png'
+      alt='twitter11111'
+      className='h-8 md:h-10'
+    />
+  </div>
+</a>
 
         <h1 className='text-2xl md:text-4xl lg:text-5xl mt-8'
             style={{ fontFamily: 'var(--font-permanent-marker)' }}>
@@ -94,7 +96,7 @@ const Home = () => {
           </Link>
         </div>
         
-        <footer className="bg-gray-200 py-4 px-8 flex flex-col items-center md:flex-row justify-between">
+        <footer className="py-8 px-8 flex items-center md:flex-row justify-between font-raleway mt-[60px] h-[35px] w-full bg-[#3E3E3E] pb-[40px] pl-[9px] pr-[22px] pt-[11px] text-left font-[400] ">
   <p className="text-sm md:text-base">
     Zerttesh, Kazakhstan, Aqtau 2023
   </p>
