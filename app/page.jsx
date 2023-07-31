@@ -241,6 +241,10 @@ const Home = () => {
             </button>
           </Link>
         </div>
+
+        <footer>
+          
+        </footer>
       </div>
     </div>
   );
