@@ -474,21 +474,22 @@
 
 
 
-
+/* 
 @media only screen and (max-width: 768px) {
 
   .desktop1 {
-    height: 3300px;
+    max-height: 3300px;
     margin-left: -75px;
     margin-top: -50px;
     background-color: black;
+    max-width: 800px;
   }
   
   .text1 {
     font-weight: 400;
     font-size: 36px;
     font-family: Permanent Marker;
-    width: 90%; 
+    max-width: 90%; 
     margin-top: -40px;
   }
   
@@ -821,4 +822,4 @@ bottom: -2000;
 
   
 
-}
+} */
