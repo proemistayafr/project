@@ -241,10 +241,29 @@ const Home = () => {
             </button>
           </Link>
         </div>
+        
+        <footer className="bg-gray-200 py-4 px-8 flex flex-col items-center md:flex-row justify-between">
+  <p className="text-sm md:text-base">
+    Zerttesh, Kazakhstan, Aqtau 2023
+  </p>
+  <div className="mt-4 md:mt-0">
+    <a
+      href="https://www.linkedin.com/in/nargiza-nurmukhan-7292aktausila/"
+      target="_blank"
+      className="mx-2"
+    >
+      <img src="/linkedin.png" alt="linkedin1136" className="h-6 w-6 md:h-8 md:w-8" />
+    </a>
+    <a
+      href="https://www.instagram.com/tubusiness._/"
+      target="_blank"
+      className="mx-2"
+    >
+      <img src="/instagram.png" alt="instagram1137" className="h-6 w-6 md:h-8 md:w-8" />
+    </a>
+  </div>
+</footer>
 
-        <footer>
-          
-        </footer>
       </div>
     </div>
   );
