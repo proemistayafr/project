@@ -3,7 +3,8 @@ import { Analytics } from '@vercel/analytics/react';
 import Homepage from './components/Homepage';
 import NewWay from './components/NewWay';
 import Gallery from './components/Gallery';
-
+import Quote from './components/Quote';
+import Footer from './components/Footer';
 
 export const metadata = {
   title: 'Zerttesh',
@@ -13,11 +14,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='bg-black'>
+      <body className='bg-black'
+            style={{ fontFamily: 'var(--font-raleway)' }}>
         {children}
         <Homepage/>
         <NewWay/>
         <Gallery/>
+        <Quote/>
+        <Footer/>
  
         <Analytics />
       </body>
