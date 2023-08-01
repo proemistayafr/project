@@ -14,7 +14,6 @@ export default function RootLayout({ children }) {
       <body className='bg-black overflow-x-auto'
             style={{ fontFamily: 'var(--font-raleway)' }}>
         {children}
-        <Footer/>
         <Analytics />
       </body>
     </html>
