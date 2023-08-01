@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='bg-black'
+      <body className='bg-black overflow-x-auto'
             style={{ fontFamily: 'var(--font-raleway)' }}>
         {children}
         <Homepage/>

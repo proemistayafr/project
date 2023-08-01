@@ -5,7 +5,7 @@ const Footer = () => {
     <>
  <section >
     <div className="max-w-screen-xl px-4 py-2 mx-auto space-y-2 overflow-hidden sm:px-6 lg:px-8">
-        <div className="flex justify-center mt-4 space-x-6">
+        <div className="flex justify-center mt-4 space-x-2">
             <a href="#" className="text-gray-400 hover:text-gray-500">
                 <span className="sr-only">Instagram</span>
                 <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">

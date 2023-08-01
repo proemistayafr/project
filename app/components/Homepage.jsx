@@ -1,5 +1,4 @@
 import React from 'react'
-import { Balancer } from 'react-wrap-balancer'
 import '../globals.css';
 
 const Homepage = () => {
