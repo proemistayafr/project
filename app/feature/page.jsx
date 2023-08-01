@@ -48,7 +48,7 @@ const Feature = () => {
     </div>
     </div>
 
-      <div className="mb-60">
+      <div className="mb-80">
         {locationText && <p className="text-base md:text-lg">{locationText}</p>}
       </div>
     </div>
