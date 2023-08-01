@@ -1,10 +1,7 @@
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
-import Homepage from './components/Homepage';
-import NewWay from './components/NewWay';
-import Gallery from './components/Gallery';
-import Quote from './components/Quote';
 import Footer from './components/Footer';
+
 
 export const metadata = {
   title: 'Zerttesh',
@@ -17,12 +14,7 @@ export default function RootLayout({ children }) {
       <body className='bg-black overflow-x-auto'
             style={{ fontFamily: 'var(--font-raleway)' }}>
         {children}
-        <Homepage/>
-        <NewWay/>
-        <Gallery/>
-        <Quote/>
         <Footer/>
- 
         <Analytics />
       </body>
     </html>
