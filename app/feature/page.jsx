@@ -48,8 +48,8 @@ const Feature = () => {
     </div>
     </div>
 
-      <div className="mb-80">
-        {locationText && <p className="text-base md:text-lg">{locationText}</p>}
+      <div className="mt-80">
+        {locationText && <p className="text-base md:text-lg pb-40">{locationText}</p>}
       </div>
     </div>
   </div>

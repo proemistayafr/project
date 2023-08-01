@@ -1,12 +1,12 @@
-import Footer from "../components/Footer";
+import Beta from "../components/Beta";
 import Feature from "./page";
 import React from 'react'
 
 const Layout = () => {
   return (
     <div>
+      <Beta/>
         <Feature/>
-        <Footer/>
     </div>
   )
 }
