@@ -11,7 +11,7 @@ const Feature = () => {
          async (position) => {
            const { latitude, longitude } = position.coords;
            const res = await getPlaceInfo(latitude, longitude)
-           setLocationText(`${res?.place_name.address_components.long_name}\n${res?.interesting_facts}`);
+           setLocationText(`${res?.place_name.address_components[0].long_name}\n${res?.interesting_facts}`);
          },
          (error) => {
            setLocationText('Failed to get your location. Please try again later.');
