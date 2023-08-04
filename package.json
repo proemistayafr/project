@@ -17,6 +17,7 @@
     "parcel": "^2.9.3",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
+    "react-webcam": "^7.1.1",
     "react-wrap-balancer": "^1.0.0",
     "webpack": "^5.88.2"
   },
