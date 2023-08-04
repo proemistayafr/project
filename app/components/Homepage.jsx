@@ -10,7 +10,7 @@ const Homepage = () => {
           <p className='mt-[-11px] h-[13px] w-350 text-base font-[400]'>VISIT & EXPLORE</p>
         </div>
 <h1 className="mb-8 ml-1 text-4xl font-extrabold leading-none tracking-tight  md:text-5xl lg:text-6xl  text-[#38B000]"
-              style={{ fontFamily: 'var(--font-raleway)' }}> BE YOUR OWN GUIDE! VISIT BEAUTIFUL PLACES IN KAZAKHSTAN
+              style={{ fontFamily: 'var(--font-raleway)' }}> BE YOUR OWN GUIDE! VISIT BEAUTIFUL PLACES OF THIS WORLD
           AND DISCOVER
           ITS HISTORY IN REAL-TIME</h1>
 
