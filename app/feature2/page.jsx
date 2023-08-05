@@ -2,8 +2,7 @@
 
 import { useState, useCallback, useRef } from "react";
 import Webcam from "react-webcam";
-import axios from "axios";
-
+import { fetchImageAnalysis } from "../backend/fetchImageAnalysis";
 
 const CustomWebcam = () => {
   const webcamRef = useRef(null);
@@ -18,10 +17,9 @@ const CustomWebcam = () => {
     formData.append("file", dataURLtoBlob(imgSrc));
   
     try {
-      const response = await axios.post("http://127.0.0.1:8000/detect-objects", formData);
-  
-      if (!response.data.error) {
-        setGeneratedText(response.data.text);
+      const response = await fetchImageAnalysis(formData); 
+      if (!response.error) {
+        setGeneratedText(response.text);
       } else {
         throw new Error("Error fetching data from the server.");
       }
@@ -30,6 +28,7 @@ const CustomWebcam = () => {
       setGeneratedText(null);
     }
   };
+  
   
 
   const retake = () => {

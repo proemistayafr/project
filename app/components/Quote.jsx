@@ -2,7 +2,7 @@ import React from 'react'
 
 const Quote = () => {
   return (
-    <div className='mt-12 '>
+    <div className='mt-40 '>
 <blockquote className="text-xl italic font-[400] dark:text-white text-center"
             style={{ fontFamily: 'var(--font-permanent-marker)' }}>
     <svg className="w-8 h-8 text-gray-400 dark:text-gray-600 mb-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
