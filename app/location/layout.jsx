@@ -1,12 +1,12 @@
 import Beta from "../components/Beta";
-import CustomWebcam from "../feature2/page";
 import React from 'react'
+import Feature from "./page";
 
 const Layout = () => {
   return (
     <div>
       <Beta/>
-        <CustomWebcam/>
+        <Feature/>
     </div>
   )
 }
