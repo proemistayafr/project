@@ -2,34 +2,13 @@
 
 import { useState, useCallback, useRef } from "react";
 import Webcam from "react-webcam";
-import { fetchImageAnalysis } from "../backend/fetchImageAnalysis";
+
 
 const CustomWebcam = () => {
   const webcamRef = useRef(null);
   const [imgSrc, setImgSrc] = useState(null);
   const [generatedText, setGeneratedText] = useState(null);
   const [facingMode, setFacingMode] = useState("user");
-
-  const generateZertteik = async () => {
-    if (!imgSrc) return;
-  
-    const formData = new FormData();
-    formData.append("file", dataURLtoBlob(imgSrc));
-  
-    try {
-      const response = await fetchImageAnalysis(formData); 
-      if (!response.error) {
-        setGeneratedText(response.text);
-      } else {
-        throw new Error("Error fetching data from the server.");
-      }
-    } catch (error) {
-      console.error("Error fetching data:", error);
-      setGeneratedText(null);
-    }
-  };
-  
-  
 
   const retake = () => {
     setImgSrc(null);
@@ -44,26 +23,47 @@ const CustomWebcam = () => {
     setFacingMode((prevMode) => (prevMode === "user" ? "environment" : "user"));
   };
 
+
+  const detectLandmark = async () => {
+    try {
+      const formData = new FormData();
+      formData.append("file", dataURItoBlob(imgSrc));
+
+      const response = await axios.post("http://localhost:8000/detect-landmark", formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
+
+      if (response.data && response.data.text) {
+        setGeneratedText(response.data.text);
+      }
+    } catch (error) {
+      console.error("Error while detecting landmark:", error);
+    }
+  };
+
+  const dataURItoBlob = (dataURI) => {
+    const byteString = atob(dataURI.split(",")[1]);
+    const mimeString = dataURI.split(",")[0].split(":")[1].split(";")[0];
+
+    const ab = new ArrayBuffer(byteString.length);
+    const ia = new Uint8Array(ab);
+
+    for (let i = 0; i < byteString.length; i++) {
+      ia[i] = byteString.charCodeAt(i);
+    }
+
+    return new Blob([ab], { type: mimeString });
+  };
+
   const uploadImage = (e) => {
     const file = e.target.files[0];
     const reader = new FileReader();
     reader.onload = () => {
       setImgSrc(reader.result);
-      generateZertteik();
     };
     reader.readAsDataURL(file);
-  };
-
-  const dataURLtoBlob = (dataURL) => {
-    const arr = dataURL.split(",");
-    const mime = arr[0].match(/:(.*?);/)[1];
-    const bstr = atob(arr[1]);
-    let n = bstr.length;
-    const u8arr = new Uint8Array(n);
-    while (n--) {
-      u8arr[n] = bstr.charCodeAt(n);
-    }
-    return new Blob([u8arr], { type: mime });
   };
 
   return (
@@ -112,7 +112,7 @@ const CustomWebcam = () => {
 
         <button
           className="btn-generate-zertteik text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-          onClick={generateZertteik}
+          onClick={detectLandmark}
         >
           Zertteik
         </button>
