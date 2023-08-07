@@ -12,7 +12,7 @@ const Homepage = () => {
 <h1 className="mb-8 ml-1 text-4xl font-extrabold leading-none tracking-tight  md:text-5xl lg:text-6xl  text-[#38B000]"
               style={{ fontFamily: 'var(--font-raleway)' }}> BE YOUR OWN GUIDE! VISIT BEAUTIFUL PLACES OF KAZAKHSTAN
           AND DISCOVER
-          THIR HISTORY IN REAL-TIME</h1>
+          THEIR HISTORY IN REAL-TIME</h1>
 
 <a href='https://twitter.com/Tubussines69/status/1682683077695270913?s=20' target='_blank'className="mb-10 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center  hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 rounded-[78px] bg-[#84D1FD] text-[#1DA1F3]">
     Introducing Zerttesh
